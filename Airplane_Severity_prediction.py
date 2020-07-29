@@ -18,8 +18,8 @@ import seaborn as sns
 # In[2]:
 
 
-train_data= pd.read_csv('C:/Users/priyanka.CHEF5GWTN2/Desktop/Hackathon/Airplane Accident/3c055e822d5b11ea/train.csv', encoding='utf-8-sig')
-validate_data= pd.read_csv('C:/Users/priyanka.CHEF5GWTN2/Desktop/Hackathon/Airplane Accident/3c055e822d5b11ea/test.csv', encoding='utf-8-sig')
+train_data= pd.read_csv('.../train.csv', encoding='utf-8-sig')
+validate_data= pd.read_csv('.../test.csv', encoding='utf-8-sig')
 
 
 # In[3]:
@@ -206,7 +206,7 @@ pred_test.columns = ['Severity']
 
 submission_data= validate_data[['Accident_ID']]
 submission_data['Severity'] = pred_test['Severity']
-submission_data.to_csv('C:/Users/priyanka.CHEF5GWTN2/Desktop/Hackathon/Airplane Accident/3c055e822d5b11ea/submission.csv', index=False)
+submission_data.to_csv('.../submission.csv', index=False)
 
 
 # In[ ]:
